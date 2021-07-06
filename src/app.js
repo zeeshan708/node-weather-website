@@ -6,7 +6,7 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 const publicDirectoryPath = path.join(__dirname, '../public')
 
-const port = 3000;
+const port = process.env.PORT || 3000 ;
 
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, '../templates/views'));
